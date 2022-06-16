@@ -28,9 +28,9 @@ class Movie {
       isAdult: _json["adult"],
       description: _json["overview"],
       posterPath: _json["poster_path"],
-      backdropPath: _json["backdrop_path"],
+      backdropPath: _json["backdrop_path"] ?? '',
       rating: _json["vote_average"],
-      releaseDate: _json["release_date"],
+      releaseDate: _json["release_date"] ?? '',
     );
   }
 

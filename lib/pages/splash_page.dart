@@ -30,7 +30,7 @@ class _SplashPageState extends State<SplashPage> {
   Future<void> _setup(BuildContext _context) async {
     final getIt = GetIt.instance;
 
-    final configFile = await rootBundle.loadString("assets/config/main.json");
+    final configFile = await rootBundle.loadString("asset/config/main.json");
     final configData = jsonDecode(configFile);
 
     getIt.registerSingleton<AppConfig>(
@@ -58,7 +58,7 @@ class _SplashPageState extends State<SplashPage> {
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.contain,
-            image: AssetImage("assets/images/logo.png"),
+            image: AssetImage("asset/images/logo.png"),
           ),
         ),
       )),
